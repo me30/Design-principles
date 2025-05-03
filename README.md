@@ -47,6 +47,9 @@ This project adheres to key software design principles to ensure maintainability
    - **Service Class**: Handles business logic.
    - **Repository Class**: Manages database operations.
 
+![image](https://github.com/user-attachments/assets/5be3c30f-a35d-4fd8-ab21-7305a097d7d7)
+
+![image](https://github.com/user-attachments/assets/2d81197c-858d-43a4-8cb1-9be96ab5e4f2)
 
 2. **Open/Closed Principle (OCP)**  
    A class should be **open for extension** but **closed for modification**. This means that the behavior of a class can be extended without modifying its existing code.
@@ -71,8 +74,21 @@ This project adheres to key software design principles to ensure maintainability
    - When you need to add new features regularly.
    - When the core functionality is stable, and you want to avoid changing it frequently.
    - When you need to ensure backward compatibility with previous versions of your software.
+  
+   ![image](https://github.com/user-attachments/assets/1d26264f-afa5-4766-8655-7456fb9d453b)
 
-3. **Liskov Substitution Principle (LSP)**  
+   ![image](https://github.com/user-attachments/assets/dfd22ff3-cc56-4617-9787-eaf2bd781a9f)
+
+   ![image](https://github.com/user-attachments/assets/95efca53-dfe6-4bb4-b081-f11b1e29f11c)
+
+   ![image](https://github.com/user-attachments/assets/54e8d750-8665-4841-8710-0602f9209614)
+
+   ![image](https://github.com/user-attachments/assets/08d7959f-e17b-4da6-b939-afa3d4620895)
+
+
+
+
+4. **Liskov Substitution Principle (LSP)**  
    Subtypes must be **substitutable** for their base types without affecting the correctness of the program. This means objects of a derived class should be able to replace objects of the base class without altering the desired behavior.
 
    1) Derived classes should not change the expected behavior of the parent class.
@@ -96,7 +112,7 @@ This project adheres to key software design principles to ensure maintainability
    - When you create derived classes or subclasses.
    - When you need predictable and consistent behavior from subclasses.
 
-4. **Interface Segregation Principle (ISP)**  
+5. **Interface Segregation Principle (ISP)**  
    Clients should not be forced to implement interfaces they do not use. In other words, it's better to have several small, specific interfaces than one large, general-purpose interface.
 
    1) Instead of having one huge interface, split it into smaller, more manageable ones.
@@ -120,7 +136,7 @@ This project adheres to key software design principles to ensure maintainability
    - When your classes are implementing unnecessary methods.
    - When you want to reduce code coupling.
 
-5. **Dependency Inversion Principle (DIP)**  
+6. **Dependency Inversion Principle (DIP)**  
    High-level modules should depend on abstractions (e.g., interfaces), not on concrete classes. Likewise, low-level modules should depend on abstractions, not concrete classes.
 
    1) Depend on **interfaces or abstract classes** rather than on concrete implementations.
