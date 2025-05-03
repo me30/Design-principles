@@ -128,3 +128,125 @@ This project adheres to key software design principles to ensure maintainability
    - When your system has tightly coupled classes that need to be decoupled.
    - When you need to change the implementation of a service without affecting others.
 
+---
+
+### Additional Key Design Principles:
+
+---
+
+6. **DRY (Don’t Repeat Yourself)**  
+   DRY principle emphasizes avoiding code duplication by abstracting repeated logic into reusable methods or classes. 
+
+   1) Every piece of knowledge or logic should only exist in one place in your codebase.  
+   2) Code duplication can lead to bugs when modifications are needed and increases the difficulty of maintaining the code.  
+   3) By reusing code, you promote cleaner, more maintainable systems.
+
+   🚦 **Why is DRY Important?**
+   - ✅ **Reduces bugs**: Changes need to be made in one place, reducing the chances of inconsistencies.
+   - ✅ **Improves maintainability**: Code becomes easier to understand and update.
+   - ✅ **Promotes reusability**: Common logic can be reused across your project.
+
+   🧠 **Real-Life Analogy**  
+   Think of a recipe book:
+   - **Bad design**: You write the same recipe in every chapter (e.g., chicken recipe in appetizers, main course, and snacks).
+   - **Good design (DRY)**: You write the recipe once and reference it where needed in the book.
+
+   🧰 **When to Apply DRY in Real Projects**
+   - When you see the same logic or code repeated across different classes or methods.
+   - When you want to reduce maintenance costs and increase code clarity.
+
+---
+
+7. **KISS (Keep It Simple, Stupid)**  
+   KISS advocates that simpler solutions are often better; avoid unnecessary complexity.
+
+   1) Focus on simple and straightforward designs and solutions.  
+   2) Overcomplicating code increases the chance of introducing errors and makes it harder to maintain.  
+   3) Simple solutions are easier to understand, test, and maintain over time.
+
+   🚦 **Why is KISS Important?**
+   - ✅ **Improves readability**: Simple code is easier for developers to read and understand.
+   - ✅ **Reduces bugs**: The simpler the design, the fewer the chances of introducing errors.
+   - ✅ **Speeds up development**: Simpler solutions often take less time to implement.
+
+   🧠 **Real-Life Analogy**  
+   Think of driving directions:
+   - **Bad design**: You provide complicated routes with multiple turns and alternate paths.
+   - **Good design (KISS)**: You provide clear, concise directions with fewer steps, leading straight to the destination.
+
+   🧰 **When to Apply KISS in Real Projects**
+   - When faced with a complex problem that seems to require unnecessary steps.
+   - When simplicity can achieve the same result as a more complex solution.
+
+---
+
+8. **YAGNI (You Aren’t Gonna Need It)**  
+   YAGNI advises not to add functionality unless it is necessary for the current requirements.
+
+   1) Avoid over-engineering your solution with features or functionality you think you might need in the future.  
+   2) It’s easy to get caught up adding features that are not required right now but can lead to wasted effort and complexity.  
+   3) Focus only on what’s necessary for the current scope of the project.
+
+   🚦 **Why is YAGNI Important?**
+   - ✅ **Reduces waste**: Avoids adding unnecessary complexity or features that may never be used.
+   - ✅ **Increases focus**: Keeps the development effort concentrated on essential tasks.
+   - ✅ **Improves efficiency**: Reduces the amount of code you need to write and maintain.
+
+   🧠 **Real-Life Analogy**  
+   Think of buying a wardrobe:
+   - **Bad design**: You buy a wardrobe with a ton of extra shelves, hooks, and compartments, even though you only need space for clothes.
+   - **Good design (YAGNI)**: You buy a simple, functional wardrobe with just enough compartments to hold your clothes.
+
+   🧰 **When to Apply YAGNI in Real Projects**
+   - When you’re unsure if a feature is really needed.
+   - When you’re tempted to implement unnecessary features “just in case” they might be useful later.
+
+---
+
+9. **Composition Over Inheritance**  
+   Composition suggests that you should favor using object composition to extend behavior rather than class inheritance.
+
+   1) Composition involves building complex behaviors by combining simple objects.  
+   2) Unlike inheritance, composition allows you to change or extend behavior dynamically.  
+   3) Composition tends to lead to more flexible and decoupled systems than inheritance, which can create tight coupling between classes.
+
+   🚦 **Why is Composition Over Inheritance Important?**
+   - ✅ **Increases flexibility**: Objects can change behaviors at runtime.
+   - ✅ **Promotes loose coupling**: Different parts of the code are less tightly dependent on each other.
+   - ✅ **Prevents the "fragile base class" problem**: Changes to a base class won’t inadvertently affect subclasses.
+
+   🧠 **Real-Life Analogy**  
+   Think of a car:
+   - **Bad design**: You extend a base "Vehicle" class to create a "Car" class, tightly coupling all vehicles to the same structure.
+   - **Good design (Composition)**: A car "has a" engine, wheels, and a transmission, but these components can be swapped or changed independently.
+
+   🧰 **When to Apply Composition Over Inheritance in Real Projects**
+   - When inheritance is creating too much complexity and tight coupling.
+   - When you need to change behavior dynamically.
+
+---
+
+10. **Law of Demeter (LoD)**  
+   LoD, or the "principle of least knowledge," advises that a method should only call methods on objects that are directly related to it.
+
+   1) A method should only interact with its immediate components, not objects that are "too far away" in the system.  
+   2) This reduces the system's complexity and increases modularity.  
+   3) It limits the dependencies between objects and minimizes the risk of unintended side effects.
+
+   🚦 **Why is LoD Important?**
+   - ✅ **Reduces coupling**: Less dependency on external objects makes the system easier to understand and maintain.
+   - ✅ **Increases modularity**: You can modify or replace parts of your system with fewer consequences for other parts.
+   - ✅ **Improves flexibility**: Methods are less dependent on complex relationships with distant objects.
+
+   🧠 **Real-Life Analogy**  
+   Think of an office worker:
+   - **Bad design**: An office worker contacts several departments to get their tasks done.
+   - **Good design (LoD)**: The worker communicates only with their team, and the team handles interactions with other departments.
+
+   🧰 **When to Apply LoD in Real Projects**
+   - When you notice objects with too many dependencies on each other.
+   - When you want to minimize the impact of changes in the system.
+
+---
+
+
