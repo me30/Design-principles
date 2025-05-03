@@ -86,9 +86,7 @@ This project adheres to key software design principles to ensure maintainability
    ![image](https://github.com/user-attachments/assets/08d7959f-e17b-4da6-b939-afa3d4620895)
 
 
-
-
-4. **Liskov Substitution Principle (LSP)**  
+3. **Liskov Substitution Principle (LSP)**  
    Subtypes must be **substitutable** for their base types without affecting the correctness of the program. This means objects of a derived class should be able to replace objects of the base class without altering the desired behavior.
 
    1) Derived classes should not change the expected behavior of the parent class.
@@ -112,7 +110,11 @@ This project adheres to key software design principles to ensure maintainability
    - When you create derived classes or subclasses.
    - When you need predictable and consistent behavior from subclasses.
 
-5. **Interface Segregation Principle (ISP)**  
+   ![image](https://github.com/user-attachments/assets/81b91e6d-ab97-43e2-b3a7-eae1bef270c1)
+
+   ![image](https://github.com/user-attachments/assets/e8d1852c-18c5-4767-997f-9dfceb52f93f)
+
+4. **Interface Segregation Principle (ISP)**  
    Clients should not be forced to implement interfaces they do not use. In other words, it's better to have several small, specific interfaces than one large, general-purpose interface.
 
    1) Instead of having one huge interface, split it into smaller, more manageable ones.
@@ -135,8 +137,12 @@ This project adheres to key software design principles to ensure maintainability
    - When your system has large interfaces with methods that aren't needed by all clients.
    - When your classes are implementing unnecessary methods.
    - When you want to reduce code coupling.
+  
+  ![image](https://github.com/user-attachments/assets/bbfa83ad-6b27-4cec-876c-bf142118ad44)
 
-6. **Dependency Inversion Principle (DIP)**  
+  ![image](https://github.com/user-attachments/assets/cfd41837-f54e-4618-825b-bce862610e29)
+
+5. **Dependency Inversion Principle (DIP)**  
    High-level modules should depend on abstractions (e.g., interfaces), not on concrete classes. Likewise, low-level modules should depend on abstractions, not concrete classes.
 
    1) Depend on **interfaces or abstract classes** rather than on concrete implementations.
