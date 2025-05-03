@@ -31,6 +31,22 @@ This project adheres to key software design principles to ensure maintainability
    - When your class is growing too large (God Class).
    - When a change in one area accidentally breaks something else.
    - When testing becomes difficult or unclear.
+  
+   🔧 **Example:**
+
+   **❌ What Not to Do:**
+   Avoid combining multiple responsibilities in a single class.
+   
+   A single class that receives HTTP requests, validates input, applies business logic, and saves data to the database.  
+   This violates the **Single Responsibility Principle (SRP)** because it mixes multiple responsibilities, making the code difficult to maintain.
+   
+   **✅ What to Do Instead:**
+   Separate responsibilities into different classes to make your code modular and easier to maintain.
+   
+   - **Controller Class**: Handles HTTP requests and responses.
+   - **Service Class**: Handles business logic.
+   - **Repository Class**: Manages database operations.
+
 
 2. **Open/Closed Principle (OCP)**  
    A class should be **open for extension** but **closed for modification**. This means that the behavior of a class can be extended without modifying its existing code.
@@ -248,5 +264,14 @@ This project adheres to key software design principles to ensure maintainability
    - When you want to minimize the impact of changes in the system.
 
 ---
+✅ Summary
+
+| Principle | Benefit in Spring Boot REST APIs |
+|----------|----------------------------------|
+| SRP      | Easier maintenance, modular code |
+| OCP      | Add features with zero risk to existing logic |
+| LSP      | Safer substitutions, extensibility |
+| ISP      | Slimmer, cleaner service layers |
+| DIP      | Easier testing and loose coupling |
 
 
